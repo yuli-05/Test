@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+
+LABEL mainteiner = "Julissa"
+LABEL version = "v1"
+LABEL description = "Test"
+
+RUN apt-get update
+
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip
+RUN pip install pytest
